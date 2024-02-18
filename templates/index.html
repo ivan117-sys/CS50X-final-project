@@ -1,0 +1,744 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+  <main>
+    <section class="hero-section position-relative">
+      <div class="hero-img__container">
+        <img src="../static/photos/pascal-bernardon-dLifkLvc5t8-unsplash.jpg" alt="photo of Harvard library">
+      </div>
+      <div class="text-container">
+       
+          <h1 class="display-4 newsreader">
+            Welcome to the CS50 Review Website
+          </h1>
+          <p class="fs-2 pt-4">
+            Here you can see and review your favorite courses
+          </p>
+          <a href="#review" class="btn btn-primary py-2 px-5">REVIEW</a>
+       
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md d-flex align-items-center justify-content-center">
+            <div class="legit-conatiner harvard-legit">
+              <img src="../static/photos/harvard-2.svg" alt="logo of Harvard">
+            </div>
+          </div>
+          <div class="col-6 col-md d-flex align-items-center justify-content-center">
+            <div class="legit-conatiner edx-legit r">
+              <img src="../static//photos/edx-logo-elm.svg" alt="logo of edx">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="review">
+      <div class="container">
+        <div class="row gap-3 gap-md-0">
+          <div class="col-lg-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/CS50X-375x200.jpg" alt="CS50X">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50X" class="stars-container d-flex align-items-center pointer">
+                    CS50X
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_x }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J. Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+
+                    </i>
+                    <span>
+                       12 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50x , Harvard University's introduction to the intellectual enterprises of computer science. An entry-level course taught by David J. Malan
+                  </p>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 pt-3 pt-sm-0">
+            <a class="card  rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/CS50P.jpg" alt="CS50P">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50P" class="stars-container d-flex align-items-center pointer">
+                    CS50P
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_p }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J. Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+
+                    </i>
+                    <span>
+                       10 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    An introduction to programming using a language called Python. Learn how to read and write code as well as how to test and "debug" it.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 pt-3 pt-lg-0">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/cyber.webp" alt="CS50CYBER">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50CYBER" class="stars-container d-flex align-items-center pointer">
+                    CS50 Cyber
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_c }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J. Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+
+                    </i>
+                    <span>
+                       5 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50's introduction to cybersecurity for technical and non-technical audiences alike. Learn how to protect your own data, devices, and systems.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/si.webp" alt="CS50AI">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50AI" class="stars-container d-flex align-items-center pointer">
+                    CS50AI
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_a }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       Brian Yu
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       7 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This course explores the concepts and algorithms at the foundation of modern artificial intelligence.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/w.webp" alt="CS50W">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50W" class="stars-container d-flex align-items-center pointer">
+                    CS50W
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_w }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       Brian Yu
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       12 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This course picks up where CS50 leaves off, diving more deeply into the design and implementation of web apps.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/SQL.webp" alt="CS50SQL">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50SQL" class="stars-container d-flex align-items-center pointer">
+                    CS50SQL
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_sq }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       Carter Zenke
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       7 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50's introduction to databases using a language called SQL. Learn how to create, read, update, and delete data with relational databases, which store data in rows and columns.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/M.webp" alt="CS50M">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50M" class="stars-container d-flex align-items-center pointer">
+                    CS50M
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_m }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       Jordan Hayashi
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       13 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50's introduction to databases using a language called SQL. Learn how to create, read, update, and delete data with relational databases, which store data in rows and columns.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card  rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/T.webp" alt="CS50T">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50T" class="stars-container d-flex align-items-center pointer">
+                    CS50T
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_t }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J.Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       6 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50's introduction to technology for students who don’t (yet) consider themselves computer persons.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card  rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/R.webp" alt="CS50R">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50R" class="stars-container d-flex align-items-center pointer">
+                    CS50R
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_r }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       Carter Zenke
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       7 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    In a quest to understand how video games themselves are implemented, you'll explore the design of childhood games as Super Mario Bros.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card  rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/B.webp" alt="CS50B">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50B" class="stars-container d-flex align-items-center pointer">
+                    CS50B
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_b }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J.Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       6 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This is CS50’s introduction to computer science for business professionals, designed for managers, product managers, founders, and decision-makers more generally.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/os.webp" alt="CS5OS">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS5OS" class="stars-container d-flex align-items-center pointer">
+                    CS5OS
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_os }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J.Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       3 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    An introduction to programming using Scratch, a visual programming language via which aspiring programmers can write code by dragging and dropping graphical blocks.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/ap.webp" alt="CS50AP">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50AP" class="stars-container d-flex align-items-center pointer">
+                    CS50AP
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_ap }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J.Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       36 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    An entry-level course taught by David J. Malan, CS50 AP teaches students how to think algorithmically and solve problems efficiently.
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4  pt-4 col-md-6 col-12">
+            <a class="card rounded shadow border-0">
+              <div class="card-img-top rounded-top">
+                <img class="rounded-top" src="../static/photos/l.webp" alt="CS50L">
+              </div>
+              <div class="card-body text-dark">
+                <div>
+                  <h3 value="CS50L" class="stars-container d-flex align-items-center pointer">
+                    CS50L
+                
+                      <i id="1" class="ps-3 las la-star fs-5" name="star" value="1"></i>
+               
+                      <i id="2" class="las la-star fs-5" name="star" value="2" ></i>
+                 
+                      <i id="3" class="las la-star fs-5" name="star" value="3"></i>
+                   
+                      <i id="4" class="las la-star fs-5" name="star" value="4"></i>
+                    
+                      <i id="5" class="las la-star fs-5" name="star" value="5"></i>
+
+                      <span class="fs-5 text-primary ps-2 review-grade">
+                        {{ review_l }} / 5
+                      </span>
+                   
+                  </h3>
+                 
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="las la-user-tie la-lg text-primary">   
+                    </i>
+                    <span class="small">
+                       David J.Malan
+                    </span>
+                  </div>
+                  <div class="col">
+                    <i class="las la-hourglass la-lg text-primary">
+                    </i>
+                    <span>
+                       10 weeks
+                    </span>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <p class="text-muted">
+                    This course is a variant of HarvardUniversity's introduction to computer science, CS50, designed especially for lawyers (and law students).
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center pb-4">
+          <h2 class="text-center text-dark text-uppercase mb-0">Top Rated Courses</h2>
+        </div>
+        <div class="row f-flex justify-content-center text-dark pt-0 pt-lg-4">
+          {% for best_course in best_courses %}
+            <div class="col-lg-4 col-12 pt-2 pt-lg-0 d-flex justify-content-center align-items-center">
+              <span class="pe-1 fs-2">
+                {{ loop.index }}.
+              </span>
+              <span class="fs-2 headings-font-family mb-0 lh-1">
+
+                {{ best_course.title }}
+              </span>
+              <span class="text-primary ps-3 fs-4">
+                {{ best_course["AVG(review)"] }} / 5
+              </span>
+            </div>           
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class="position-relative">
+      <div class="img-container position-relative">
+        <img class="cta-img" src="../static/photos/nathan-dumlao-ewGMqs2tmJI-unsplash.jpg" alt="other courses">
+      </div>
+      <div class="cta-container">
+        <h2 class="pb-4 display-6 newsreader">
+          For more learning visit Harvard University
+        </h2>
+        <a href="https://www.harvardonline.harvard.edu/" class="btn btn-primary px-5">VISIT</a>
+      </div>
+    </section>
+
+  </main>
+       
+{% endblock %}                 
+
+
